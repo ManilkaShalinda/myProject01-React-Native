@@ -10,3 +10,15 @@ class App extends Component {
     );
   }
 }
+
+const styles = Stylesheet.create({
+  view: {
+    flex: 1,
+    backgroundColor: 'white',
+    justifyContent: 'center',
+    alignItems: 'center',
+
+  },
+});
+
+export default App;
