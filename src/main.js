@@ -4,8 +4,8 @@ import {View, Text, Stylesheet} from 'react-native';
 class App extends Component {
   render() {
     return (
-      <View>
-        <Text>Hello World!</Text>
+      <View style={styles.view}>
+        <Text style={styles.bodyText}>Hello World!</Text>
       </View>
     );
   }
@@ -14,10 +14,12 @@ class App extends Component {
 const styles = Stylesheet.create({
   view: {
     flex: 1,
-    backgroundColor: 'white',
+    backgroundColor: 'black',
     justifyContent: 'center',
     alignItems: 'center',
-
+  },
+  bodyText: {
+    fontSize: 20,
   },
 });
 
